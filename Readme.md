@@ -1,6 +1,6 @@
 ## Docker in Docker with docker-compose
 
-Base on the image docker:stable-dind 
+Based on the image docker:stable-dind 
 with docker-compose installed.
 For running an isolated docker.
 
@@ -20,12 +20,13 @@ Then to start your projects run
 docker exec -ti dind docker-compose up -d
 ```
 
-## Autostart
+## Autostart Services
 
 This project uses supervisor to start services,
 the folder for the config is /etc/supervisor/conf.d
 
 docker-compose example
+
 
 ```bash
 
@@ -54,3 +55,6 @@ Check the new service
 ```bash
 docker exec -ti dind supervisorctl status
 ```
+
+There is also a map for shell scripts to run at entrypoint
+/etc/entrypoint.d 
