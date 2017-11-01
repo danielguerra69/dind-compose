@@ -23,14 +23,14 @@ docker exec -ti dind docker-compose up -d
 ## Autostart Services
 
 This project uses supervisor to start services,
-the folder for the config is /etc/supervisor/conf.d
+the folder for the config is /etc/supervisor.d
 
 docker-compose example
 
 
 ```bash
 
-docker exec -ti dind vi /etc/supervisor/conf.d/myproject.conf
+docker exec -ti dind vi /etc/supervisor.d/myproject.conf
 ```
 
 Copy/Paste this content
