@@ -1,7 +1,7 @@
 ## Docker in Docker with docker-compose
 
-Based on the image docker:stable-dind 
-with docker-compose installed.
+Based on the image docker:stable-dind
+with docker-compose  and git installed.
 For running an isolated docker.
 
 ## Usage
@@ -57,4 +57,4 @@ docker exec -ti dind supervisorctl status
 ```
 
 There is also a map for shell scripts to run at entrypoint
-/etc/entrypoint.d 
+/etc/entrypoint.d
